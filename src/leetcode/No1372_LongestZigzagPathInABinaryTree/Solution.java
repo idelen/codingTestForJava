@@ -1,4 +1,4 @@
-package No1372_LongestZigzagPathInABinaryTree;
+package leetcode.No1372_LongestZigzagPathInABinaryTree;
 
 import java.util.HashMap;
 import java.util.Map;
