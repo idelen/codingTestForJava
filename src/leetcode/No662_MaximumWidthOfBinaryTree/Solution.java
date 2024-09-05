@@ -1,6 +1,5 @@
 package leetcode.No662_MaximumWidthOfBinaryTree;
 
-import apple.laf.JRSUIUtils.Tree;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
