@@ -10,7 +10,7 @@ public class Solution {
 		int N = Integer.parseInt(br.readLine());
 
 		PriorityQueue maxHeap = new PriorityQueue(N/2 + 2);
-		PriorityQueue minHeap = new PriorityQueue(N/2 + 2);
+		PriorityQueue minHeap = new PriorityQueue(N/2 + 1);
 
 
 		for (int i = 0; i < N; i++) {
@@ -100,7 +100,7 @@ class PriorityQueue {
 		heap[1] = heap[index];
 		heap[index--] = Integer.MIN_VALUE;
 
-		for (int i = 1; i < index; ) {
+		for (int i = 1; i * 2 <= index; ) {
 			if (heap[i] > heap[i*2] && heap[i] > heap[i*2+1]) {
 				break;
 			} else if (heap[i*2] > heap[i*2+1]) {
@@ -124,7 +124,7 @@ class PriorityQueue {
 		heap[1] = heap[index];
 		heap[index--] = Integer.MAX_VALUE;
 
-		for (int i = 1; i < index; ) {
+		for (int i = 1; i * 2 <= index; ) {
 			if (heap[i] < heap[i*2] && heap[i] < heap[i*2+1]) {
 				break;
 			} else if (heap[i*2] < heap[i*2+1]) {
